@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CaféU: consulta el menú de la cafetería universitaria, arma tu pedido y elige la hora de retiro.">
+  <title>CaféU | Pedidos de la cafetería universitaria</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-cup" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h11v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M15 9h2.4a2.3 2.3 0 0 1 0 4.6H15"/><path d="M8 3.5v2M11 3v2"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 10v9h13v-9"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h11"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1.1 11H7.1z"/><path d="M9 8a3 3 0 0 1 6 0"/></symbol>
+    <symbol id="i-food" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a8 8 0 0 1 16 0z"/><path d="M3 18h18"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 10 17 19 7"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  </svg>
+
+  <div class="wrap">
+    <div class="app">
+      <header class="appbar">
+        <span class="marca"><svg width="20" height="20" aria-hidden="true"><use href="#i-cup"/></svg> CaféU</span>
+        <button type="button" class="pill" data-ir="pedido" id="btn-pedido">Mi pedido <span class="n" id="contador" aria-label="productos en el pedido">0</span></button>
+      </header>
+      <main id="contenido" tabindex="-1"></main>
+      <nav class="tabbar" aria-label="Navegación principal">
+        <button type="button" class="tab" data-ir="inicio" data-tab="inicio"><svg aria-hidden="true"><use href="#i-home"/></svg>Inicio</button>
+        <button type="button" class="tab" data-ir="menu" data-tab="menu"><svg aria-hidden="true"><use href="#i-menu"/></svg>Menú</button>
+        <button type="button" class="tab" data-ir="pedido" data-tab="pedido"><svg aria-hidden="true"><use href="#i-bag"/></svg>Mi pedido</button>
+      </nav>
+    </div>
+    <footer class="nota-pie">
+      <p>CaféU · versión 2 · navegable con teclado: <kbd>Tab</kbd>, <kbd>Enter</kbd>, <kbd>Esc</kbd>.</p>
+      <p><button type="button" class="link" data-accion="reiniciar">Reiniciar demostración</button></p>
+      <div id="anuncio" class="sr-only" role="status" aria-live="polite"></div>
+    </footer>
+  </div>
+
+  <dialog id="dlg-cancelar" aria-labelledby="dlg-titulo" aria-describedby="dlg-desc">
+    <h2 id="dlg-titulo">¿Cancelar el pedido?</h2>
+    <p id="dlg-desc">Se cancelará el pedido <strong id="dlg-num"></strong>. Podrás restaurarlo justo después.</p>
+    <button type="button" class="btn peligro" data-accion="cancelar-si">Sí, cancelar pedido</button>
+    <button type="button" class="btn sec" data-accion="cancelar-no" autofocus>No, mantener mi pedido</button>
+  </dialog>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
