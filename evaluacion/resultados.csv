@@ -1,0 +1,17 @@
+sesion,version,tarea,exito,tiempo_s,acciones,acciones_minimas,errores_criticos,errores_no_criticos,ayuda,seq,sus,cuenta_en_metricas,nota
+P00,v1,T1,Sí,9.5,4,4,0,0,No,6,,no,piloto
+P00,v1,T2,Sí,5.5,1,1,0,0,No,7,,no,piloto
+P00,v1,T3,Sí,18.0,10,8,0,1,No,5,,no,piloto: el buscador conservaba «cafe»
+P00,v1,SUS,,,,,,,,,77.5,no,piloto
+P01,v1,T1,Sí,6.1,4,4,0,0,No,7,,sí,
+P01,v1,T2,Sí,4.1,1,1,0,0,No,7,,sí,
+P01,v1,T3,Sí,13.5,9,8,0,1,No,5,,sí,el buscador conservaba «cafe»
+P01,v1,SUS,,,,,,,,,85.0,sí,
+P02,v1,T1,Sí,3.5,4,4,0,0,No,6,,sí,
+P02,v1,T2,Sí,2.7,1,1,0,0,No,7,,sí,
+P02,v1,T3,Sí,17.6,10,8,0,1,No,5,,sí,filtro Comida con la búsqueda anterior: 0 productos
+P02,v1,SUS,,,,,,,,,72.5,sí,
+P03,v2,T1,Sí,7.2,4,4,0,0,No,7,,no,verificación de la versión 2 con otra persona
+P03,v2,T2,Sí,,1,1,0,0,No,7,,no,verificación v2: el tiempo no es válido por un error de registro
+P03,v2,T3,Sí,9.9,8,8,0,0,No,7,,no,verificación v2
+P03,v2,SUS,,,,,,,,,87.5,no,verificación v2
