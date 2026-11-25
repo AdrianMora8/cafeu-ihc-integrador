@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 660" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+  <title id="t">Wireframe 1: Menú y búsqueda</title>
+  <desc id="d">Pantalla del menú con buscador, filtros por categoría, tarjetas de producto y barra de navegación, con cinco notas explicativas.</desc>
+  <style>
+    .t{font-size:13px;fill:#222}.b{font-weight:700}.s{font-size:11px;fill:#555}.h{font-size:19px;font-weight:700;fill:#222}
+    .box{fill:#fff;stroke:#444;stroke-width:1.5}.ph{fill:#e6e6e6;stroke:#9a9a9a}.btn{fill:#fff;stroke:#444;stroke-width:2}
+    .on{fill:#333;stroke:#333}.note{font-size:13px;fill:#222}.num{fill:#bf360c}.numt{font-size:12px;font-weight:700;fill:#fff;text-anchor:middle}
+  </style>
+  <rect width="780" height="660" fill="#fafafa"/>
+  <text x="20" y="16" class="s">Wireframe 1 de 3 · Menú de hoy (#/menu) · RF-01, RF-02</text>
+
+  <!-- teléfono -->
+  <rect x="20" y="24" width="360" height="620" rx="26" fill="#fff" stroke="#222" stroke-width="3"/>
+  <text x="44" y="62" class="t b">☕ CaféU</text>
+  <rect x="268" y="42" width="96" height="28" rx="14" class="btn"/><text x="316" y="61" class="t b" text-anchor="middle">Mi pedido (0)</text>
+  <line x1="20" y1="82" x2="380" y2="82" stroke="#bbb"/>
+
+  <!-- progreso -->
+  <rect x="40" y="94" width="96" height="4" fill="#333"/><rect x="146" y="94" width="96" height="4" fill="#ccc"/><rect x="252" y="94" width="96" height="4" fill="#ccc"/>
+  <text x="88" y="112" class="s" text-anchor="middle">Carta</text><text x="194" y="112" class="s" text-anchor="middle">Pedido</text><text x="300" y="112" class="s" text-anchor="middle">Listo</text>
+
+  <text x="40" y="142" class="h">Menú de hoy</text>
+  <rect x="40" y="154" width="320" height="40" rx="20" class="ph"/><text x="60" y="179" class="s">Buscar productos…</text>
+  <rect x="40" y="206" width="64" height="32" rx="16" class="on"/><text x="72" y="227" class="t b" style="fill:#fff" text-anchor="middle">Todo</text>
+  <rect x="112" y="206" width="84" height="32" rx="16" class="btn"/><text x="154" y="227" class="t b" text-anchor="middle">Bebidas</text>
+  <rect x="204" y="206" width="84" height="32" rx="16" class="btn"/><text x="246" y="227" class="t b" text-anchor="middle">Comida</text>
+  <text x="40" y="262" class="s">4 productos</text>
+
+  <!-- tarjeta 1 -->
+  <rect x="40" y="272" width="320" height="130" rx="14" class="box"/>
+  <rect x="54" y="286" width="52" height="52" rx="10" class="ph"/>
+  <text x="118" y="304" class="t b">Café americano</text><text x="118" y="322" class="s">Café recién preparado</text><text x="118" y="340" class="t b">$1.50</text>
+  <rect x="54" y="352" width="292" height="36" rx="10" class="btn"/><text x="200" y="375" class="t b" text-anchor="middle">Ver detalle</text>
+  <!-- tarjeta 2 -->
+  <rect x="40" y="412" width="320" height="130" rx="14" class="box"/>
+  <rect x="54" y="426" width="52" height="52" rx="10" class="ph"/>
+  <text x="118" y="444" class="t b">Empanada de pollo</text><text x="118" y="462" class="s">Horneada esta mañana</text>
+  <text x="118" y="480" class="t b">$1.50</text><rect x="168" y="468" width="146" height="18" rx="9" fill="#fff" stroke="#555" stroke-dasharray="3 2"/><text x="241" y="481" class="s" text-anchor="middle">Quedan pocas unidades</text>
+  <rect x="54" y="492" width="292" height="36" rx="10" class="btn"/><text x="200" y="515" class="t b" text-anchor="middle">Ver detalle</text>
+
+  <!-- barra inferior -->
+  <line x1="20" y1="578" x2="380" y2="578" stroke="#bbb"/>
+  <text x="80" y="606" class="t b" text-anchor="middle">⌂ Inicio</text><rect x="150" y="580" width="100" height="3" fill="#333"/><text x="200" y="606" class="t b" text-anchor="middle">☰ Menú</text><text x="320" y="606" class="t b" text-anchor="middle">🛍 Mi pedido</text>
+
+  <!-- marcadores -->
+  <g><circle cx="388" cy="56" r="11" class="num"/><text x="388" y="60" class="numt">1</text>
+     <circle cx="388" cy="174" r="11" class="num"/><text x="388" y="178" class="numt">2</text>
+     <circle cx="388" cy="222" r="11" class="num"/><text x="388" y="226" class="numt">3</text>
+     <circle cx="388" cy="336" r="11" class="num"/><text x="388" y="340" class="numt">4</text>
+     <circle cx="388" cy="592" r="11" class="num"/><text x="388" y="596" class="numt">5</text></g>
+
+  <!-- notas -->
+  <g transform="translate(420 70)">
+    <text class="note b" y="0">Notas de diseño</text>
+    <text class="note" y="30">1. "Mi pedido" con contador: siempre a un toque.</text>
+    <text class="s" y="46">Visibilidad del estado (Nielsen 1).</text>
+    <text class="note" y="82">2. Buscador con etiqueta oculta para lector de</text><text class="note" y="98">pantalla. Ignora tildes y mayúsculas (RF-02).</text>
+    <text class="note" y="134">3. Filtros como botones con estado "pulsado".</text><text class="s" y="150">Proximidad: las tres opciones forman un grupo.</text>
+    <text class="note" y="186">4. Tarjeta: precio, estado y una sola acción.</text><text class="s" y="202">El estado nunca depende solo del color (texto).</text>
+    <text class="note" y="238">5. Barra inferior: Inicio, Menú y Mi pedido.</text><text class="s" y="254">Zona del pulgar, controles de 44 px o más.</text>
+    <text class="note b" y="310">Estados de esta pantalla</text>
+    <text class="s" y="330">• Sin resultados: mensaje con "Mostrar todo el menú".</text>
+    <text class="s" y="346">• Producto agotado: botón "Ver alternativas".</text>
+    <text class="s" y="362">• Teclado: Tab recorre buscador, filtros y tarjetas.</text>
+  </g>
+</svg>

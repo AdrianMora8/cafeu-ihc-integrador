@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+  <title id="t">Estados y recuperación de errores</title>
+  <desc id="d">Tres estados: errores de validación del formulario, conflicto por producto agotado al confirmar y diálogo para cancelar el pedido.</desc>
+  <style>
+    .t{font-size:12px;fill:#222}.b{font-weight:700}.s{font-size:11px;fill:#555}.h{font-size:14px;font-weight:700;fill:#222}
+    .box{fill:#fff;stroke:#444;stroke-width:1.5}.btn{fill:#fff;stroke:#444;stroke-width:2}.pri{fill:#333;stroke:#333}
+    .err{fill:#f3f3f3;stroke:#222;stroke-width:2.5}.fe{fill:#fff;stroke:#222;stroke-width:3}.note{font-size:12px;fill:#222}
+  </style>
+  <rect width="800" height="520" fill="#fafafa"/>
+  <text x="16" y="18" class="s">Estados y recuperación de errores · RF-05, RF-06 · Nielsen 5 y 9</text>
+
+  <!-- A: errores de validación -->
+  <rect x="16" y="30" width="244" height="380" rx="18" fill="#fff" stroke="#222" stroke-width="2.5"/>
+  <text x="30" y="56" class="h">A. Datos inválidos</text>
+  <rect x="28" y="66" width="220" height="76" rx="8" class="err"/>
+  <text x="38" y="84" class="t b">Revisa estos 2 datos:</text>
+  <text x="38" y="102" class="t" text-decoration="underline">• Escribe tu nombre (mínimo 2 letras).</text>
+  <text x="38" y="120" class="t" text-decoration="underline">• Elige una hora de retiro de la lista.</text>
+  <text x="28" y="166" class="t b">Nombre para el pedido</text>
+  <rect x="28" y="172" width="220" height="28" rx="6" class="fe"/><text x="36" y="191" class="s">A</text>
+  <text x="28" y="216" class="t b">⚠ Escribe tu nombre (mínimo 2 letras).</text>
+  <text x="28" y="244" class="t b">Hora de retiro</text>
+  <rect x="28" y="250" width="220" height="28" rx="6" class="fe"/><text x="36" y="269" class="s">Elige una hora ▾</text>
+  <text x="28" y="294" class="t b">⚠ Elige una hora de retiro de la lista.</text>
+  <rect x="28" y="310" width="220" height="30" rx="10" class="pri"/><text x="138" y="330" class="t b" text-anchor="middle" style="fill:#fff">Confirmar pedido</text>
+  <text x="28" y="362" class="s">El foco pasa al resumen de errores y cada</text><text x="28" y="376" class="s">enlace lleva al campo con el problema.</text>
+
+  <!-- B: conflicto de stock -->
+  <rect x="276" y="30" width="244" height="380" rx="18" fill="#fff" stroke="#222" stroke-width="2.5"/>
+  <text x="290" y="56" class="h">B. Producto agotado</text>
+  <rect x="288" y="66" width="220" height="192" rx="8" class="err"/>
+  <text x="298" y="86" class="t b">Empanada de pollo se agotó</text><text x="298" y="102" class="t b">mientras confirmabas.</text>
+  <text x="298" y="120" class="t">Tu pedido no se envió.</text><text x="298" y="136" class="t">Elige cómo continuar:</text>
+  <rect x="298" y="148" width="200" height="30" rx="10" class="pri"/><text x="398" y="168" class="t b" text-anchor="middle" style="fill:#fff">Quitar Empanada y continuar</text>
+  <rect x="298" y="188" width="200" height="30" rx="10" class="btn"/><text x="398" y="208" class="t b" text-anchor="middle">Cambiar por Sanduche</text>
+  <text x="298" y="238" class="s">Siempre hay al menos dos caminos.</text><text x="298" y="252" class="s">El pedido no se pierde.</text>
+  <text x="288" y="276" class="t b">Otros avisos de la pantalla</text>
+  <text x="288" y="296" class="s">• "Se quitó del pedido" con botón Deshacer.</text>
+  <text x="288" y="312" class="s">• "Cancelaste el envío. Tu pedido sigue</text><text x="288" y="326" class="s">  guardado." (desde Enviando pedido).</text>
+  <text x="288" y="350" class="s">El mensaje recibe el foco y se anuncia a</text><text x="288" y="364" class="s">lectores de pantalla (role="alert").</text>
+
+  <!-- C: diálogo cancelar -->
+  <rect x="536" y="30" width="248" height="380" rx="18" fill="#fff" stroke="#222" stroke-width="2.5"/>
+  <text x="550" y="56" class="h">C. Cancelar pedido</text>
+  <rect x="536" y="66" width="248" height="344" fill="#d9d9d9" opacity="0.7"/>
+  <rect x="552" y="120" width="216" height="190" rx="14" fill="#fff" stroke="#222" stroke-width="3"/>
+  <text x="566" y="148" class="h">¿Cancelar el pedido?</text>
+  <text x="566" y="170" class="t">Se cancelará el pedido #CU-104.</text><text x="566" y="186" class="t">Podrás restaurarlo justo después.</text>
+  <rect x="566" y="200" width="188" height="32" rx="10" class="btn" stroke-dasharray="6 3"/><text x="660" y="221" class="t b" text-anchor="middle">Sí, cancelar pedido</text>
+  <rect x="566" y="242" width="188" height="32" rx="10" class="pri"/><text x="660" y="263" class="t b" text-anchor="middle" style="fill:#fff">No, mantener mi pedido</text>
+  <text x="566" y="296" class="s">El foco inicia en la opción segura.</text>
+  <text x="552" y="344" class="s">Esc o tocar fuera también cierra el diálogo.</text>
+  <text x="552" y="362" class="s">Después: pantalla "Pedido cancelado" con</text><text x="552" y="376" class="s">el botón "Restaurar pedido".</text>
+
+  <text x="16" y="440" class="h">Principios aplicados</text>
+  <text x="16" y="462" class="note">• Prevención de errores (Nielsen 5): validación antes del envío, límites de cantidad y diálogo antes de cancelar.</text>
+  <text x="16" y="480" class="note">• Recuperación de errores (Nielsen 9): el mensaje dice qué pasó y ofrece acciones concretas, no solo informa.</text>
+  <text x="16" y="498" class="note">• Figura y fondo (Gestalt): los mensajes de error tienen borde grueso y fondo propio, y el diálogo oscurece el resto.</text>
+</svg>
